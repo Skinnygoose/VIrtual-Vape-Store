@@ -1,0 +1,21 @@
+﻿﻿@model IEnumerable<VirtualStore.Models.supplier>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+@foreach (var supplier in Model)
+{
+
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <h2><a href="/Supplier/Details/@supplier.SupplierId">@supplier.SupplierName</a></h2>
+            <div>Address: @supplier.SupplierAddress </div>
+            <div>Email: @supplier.SupplierEmail </div>
+        </li>
+    </ul>
+
+}
+
+

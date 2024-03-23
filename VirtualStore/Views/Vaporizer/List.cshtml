@@ -1,0 +1,20 @@
+﻿﻿@model IEnumerable<VirtualStore.Models.Vaporizer>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+@foreach (var Vaporizer in Model)
+{
+    
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <h2><a href="/Vaporizer/Details/@Vaporizer.vaporizerId">@Vaporizer.FlavourName</a></h2>
+            <div>Customer Rating: @Vaporizer.CustomerRatings </div>
+            <div>Profit: @Vaporizer.Profit </div>
+        </li>
+    </ul>
+
+}
+

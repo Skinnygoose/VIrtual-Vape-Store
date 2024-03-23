@@ -1,0 +1,12 @@
+﻿﻿@model VirtualStore.Models.Vaporizer
+
+
+@{
+    ViewBag.Title = "View";
+}
+
+<a href="/Vaporizer/List">Go back to list</a> <a href="/Vaporizer/Delete/@Model.vaporizerId">Delete</a>
+<h2>@Model.VaporizerName</h2>
+<div>Flavour: @Model.FlavourName</div>
+<div>Customer Ratings: @Model.CustomerRatings</div>
+<div>Profit(in percentage): @Model.Profit</div>

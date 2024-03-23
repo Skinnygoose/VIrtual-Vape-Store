@@ -1,0 +1,14 @@
+﻿﻿@model VirtualStore.Models.Vaporizer
+@{
+    ViewBag.Title = "Delete-Vaporizer";
+}
+
+<h2>Are you sure you want to delete this Vaporizer?</h2>
+<a href="/Vaporizer/List">Cancel</a>
+<h2>@Model.VaporizerName</h2>
+<div>Flavour: @Model.FlavourName kg</div>
+<div>Profit: @Model.Profit</div>
+<form action="/Vaporizer/Delete/@Model.vaporizerId" method="POST">
+    <input class="btn btn-dark" type="submit" value="Confirm Delete" />
+
+</form>

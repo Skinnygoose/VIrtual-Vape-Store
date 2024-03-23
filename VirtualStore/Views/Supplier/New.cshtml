@@ -1,0 +1,22 @@
+﻿@model VirtualStore.Models.supplier
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>Create Supplier</h2>
+<form action="/Supplier/Create" method="POST">
+    <div class="form-group">
+        <label>Supplier Name:</label> <input class="form-control" type="text" name="SupplierName" />
+    </div>
+    <div class="form-group">
+        <label>SupplierAddress:</label> <input class="form-control" type="text" name="SupplierAddress" />
+    </div>
+    <div class="form-group">
+        <label>Supplier Email:</label> <input class="form-control" type="number" name="Supplier Email " />
+    </div>
+    <div class="form-group">
+        <input class="btn btn-dark" type="submit" value="Add Supplier" />
+
+    </div>
+</form>
+

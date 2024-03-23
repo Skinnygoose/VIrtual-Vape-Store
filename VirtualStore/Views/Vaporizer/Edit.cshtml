@@ -1,0 +1,29 @@
+﻿﻿@model VirtualStore.Models.Vaporizer
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Update Vaporizer</h2>
+
+   <form method="POST" action="/Vaporizer/Edit/@Model.vaporizerId">
+    <input class="form-control" type="text" style="display:none;" name="VaporizerId" value="@Model.vaporizerId" />
+   
+       <div class="form-group">
+        <label>Name</label>
+        <input  class="form-control" type="text" name="VaporizerName" value="@Model.vaporizerId" />
+       </div>
+    <div class="form-group">
+        <label>Flavour</label>
+        <input class="form-control" type="text" name="FlavourName" value="@Model.FlavourName" />
+    </div>
+    <div class="form-group">
+        <label>Profit</label>
+        <input class="form-control" type="number" name="Profit" value="@Model.Profit" />
+    </div>
+    <div>
+
+        <input class="btn btn-dark" type="submit" value="Edit" />
+    </div>
+
+</form>

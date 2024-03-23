@@ -1,0 +1,12 @@
+﻿﻿@model VirtualStore.Models.supplier
+
+
+@{
+    ViewBag.Title = "View";
+}
+
+<a href="/Supplier/List">Go back to list</a> <a href="/Supplier/Delete/@Model.SupplierId">Delete</a>
+<h2>@Model.SupplierName</h2>
+<div>Address: @Model.SupplierAddress</div>
+<div>Email: @Model.SupplierEmail</div>
+

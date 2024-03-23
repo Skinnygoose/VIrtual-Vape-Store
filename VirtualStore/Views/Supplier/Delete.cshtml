@@ -1,0 +1,15 @@
+﻿﻿@model VirtualStore.Models.supplier
+@{
+    ViewBag.Title = "Delete-Supplier";
+}
+
+<h2>Are you sure you want to delete this Supplier?</h2>
+<a href="/Supplier/List">Cancel</a>
+<h2>@Model.SupplierName</h2>
+<div>Addres: @Model.SupplierAddress </div>
+<div>Email: @Model.SupplierEmail</div>
+<form action="/Suplier/Delete/@Model.SupplierId" method="POST">
+    <input class="btn btn-dark" type="submit" value="Confirm Delete" />
+
+</form>
+
